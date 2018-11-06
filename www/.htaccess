@@ -1,0 +1,2 @@
+AuthName "fab www"
+AuthUserFile "/home/hallaby/.htpasswds/public_html/game103games/javascript/flip-a-blox/www/passwd"

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "fab protected"
+AuthUserFile "/home/hallaby/.htpasswds/public_html/game103games/javascript/flip-a-blox/res/passwd"
+require valid-user

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Cordova -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://game103.net https://*.facebook.com http://*.facebook.com https://*.facebook.net http://*.facebook.net gap://ready; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' https://*.facebook.com http://*.facebook.com https://*.facebook.net http://*.facebook.net; script-src 'self' https://game103.net https://*.facebook.com http://*.facebook.com https://*.facebook.net http://*.facebook.net;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<!-- End Cordova -->
+		<link rel="stylesheet" type="text/css" href="css/flipablox.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Flip-a-Blox</title>
+	</head>
+	<body>
+		<div id='outer-container'>
+			<div id='container'>
+				<div id='board-container'>
+					<div id='board'>
+						
+					</div>
+					<div id='message'>
+						<div id='message-title'></div>
+						<div id='message-description'></div>
+					</div>
+				</div>
+				<div id='controls-container'>
+					<div id='playing-menu'>
+                        <div class='button game-button' id='undo-button'>&#8592;</div>
+						<div class='button game-button' id='pivot-button'>Reset to pivot</div>
+						<div id='indicators'>
+							<div id='level'>
+								<div id='level-current'></div>
+								<div id='level-status'></div>
+							</div><div id='dimensions'></div>
+							<div id='tiles'>
+								<div id='tiles-current'></div>
+								<div id='tiles-needed'></div>
+							</div><div id='moves'>
+								<div id='moves-star'>&#9733;</div>
+								<div id='moves-current'></div>
+								<div id='moves-needed'></div>
+								<div id='moves-best'></div>
+							</div>
+						</div>
+						<div id='extra-options'>
+							<div class='button game-button' id='refresh-button'>&#8635; </div>
+							<div class='button game-button' id='menu-button'>&#9776; </div>
+							<div class='button game-button' id='mute-button'>&#x1f50a; </div>
+							<!--The button below will sometimes be hidden (Sometimes part of creation-options, but on line with others)-->
+							<div class='button game-button' id='clear-button'>&#x1f4a5; </div>
+							<div id='online-options'>
+								<div class='button game-button' id='share-button'>&#x27a6; </div>
+								<div class='button game-button' id='download-button'>&#x2193; </div>
+							</div>
+							<div id='creation-options'>
+								<div class='button game-button' id='save-button'>&#x1f4be; </div>
+								<div class='button game-button' id='color-button'>&#x1f58c; </div>
+								<div class='button game-button' id='character-button'>&#x1f5bc; </div>
+								<div class='button game-button' id='audio-button'>&#x1F3B5; </div>
+							</div>
+						</div>
+					</div>
+					<div id='main-menu'>
+						<div class='button main-button' id='play-button'>Play</div>
+						<div class='button main-button' id='creator-button'>Level Creator</div>
+						<div class='button main-button' id='collection-button'>Level Collection</div>
+					</div>
+					<div id='levels-menu'>
+						<div class='button levels-button' id='back-button'>Back</div>
+					</div>
+					<div id='online-menu'>
+						<div class='arrow' id='right-arrow'>&#x25ba;</div>
+						<div class='arrow' id='left-arrow'>&#x25c4;</div>
+						<div id='first-online-wrapper'>
+							<div class='arrow' id='first-online-button'>&#x25c4;&#x25c4;</div>
+						</div>
+						<div class='online-dropdowns'>
+							<div class='online-dropdown'>
+								<label for='online-category'>Levels by:</label>
+								<select id='online-category'>
+									<option value="all">Anyone</option>
+									<option value="friends">Facebook Friends</option>
+								</select>
+								<div class='online-dropdown'>
+									<label for='online-sort'>Sort by:</label>
+									<select id='online-sort'>
+										<option value="1">Popularity</option>
+										<option value="0">Upload Date</option>
+									</select>
+								</div>
+							</div>
+							<label for='online-search'>Search:</label>
+							<input id='online-search' type='text' placeholder='Search by level name/FB ID' />
+							<div id='online-extra-options'>
+								<div class='button' id='refresh-online-button'>&#8635; </div>
+								<div class='button' id='clear-online-button'>&#x1f4a5; </div>
+							</div>
+							<div class='button levels-button' id='back-online-button'>Back</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/fastclick.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src='js/facebook.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src='js/flipabloxlevels.js'></script>
+		<script type="text/javascript" src='js/flipablox.js'></script>
+	</body>
+</html>

@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "admin"
-AuthUserFile "/etc/apache2/.htpasswds/admin"
-require valid-user

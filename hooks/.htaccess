@@ -1,4 +1,0 @@
-AuthName "fab protected"
-AuthUserFile "/home/hallaby/.htpasswds/public_html/game103games/javascript/flip-a-blox/hooks/passwd"
-AuthType Basic
-require valid-user

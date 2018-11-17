@@ -211,6 +211,7 @@ function manageInput(e) {
 					pivot_select = true;
 				}
 			}
+			e.preventDefault();
 		}
 		else if(e.keyCode == 77) {
 			toggleMute();
@@ -236,6 +237,7 @@ function manageInput(e) {
 					playing_state = true;
 				}
 			}
+			e.preventDefault();
 		}
 		else if(e.keyCode == 82) {
 			// This is necessary for when a message is visible
